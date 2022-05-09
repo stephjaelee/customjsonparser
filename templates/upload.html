@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>JSON Comment Remover</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <button type="submit">Clean JSON</button>
+  </form>
+  {% if uploaded_file %}
+    <p>Uploaded file: <a href="{{ uploaded_file }}">{{ uploaded_file }}</a></p>
+    <p>Parsed file: <a href="{{ parsed_file }}">{{ parsed_file }}</a></p>
+  {% endif %}
+{% endblock %}

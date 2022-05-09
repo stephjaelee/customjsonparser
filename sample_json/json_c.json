@@ -1,0 +1,18 @@
+// Comments are allowed here.
+{ /* And also here.
+*/"starting right after the comment is okay": true,
+"having a comment in between the key and the colon is okay"/* Like this */: true,
+//"commented out keys need to be handled": true
+/* multline 
+   comments 
+   /*
+   */"may not be nested": true,
+/* "many": 1,
+   "commented": 2,
+   "out": 3,
+   "keys": 4,
+*/"is also okay": true,
+  "be careful with this": "https://subtlemedical.com"
+} // Comments are also allowed here
+// And here
+/* And there's no need to close a final multiline quote.
